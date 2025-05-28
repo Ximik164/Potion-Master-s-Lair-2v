@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potion Master's Lair</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Шапка -->
+    <header class="fixed-header">
+        <div class="header-content">
+            <img class="boiler-logo" src="images/boiler-logo.png" alt="boiler">
+            <a href="index.html" class="header-link">Potion Master's Lair</a>
+        </div>
+        <hr class="header-hr">
+        </div>
+    </header>
+    <!-- Основа -->
+    <div class="main-content">
+        <div class="welcome-message">
+            <img class="laboratory" src="images/laboratory.jpeg" alt="laboratory">
+            <div class="text-overlay">
+                <h1>Добро пожаловать в Potion Master's Lair</h1>
+                <p>Здесь вы найдете все, что вам нужно знать о зельеварении.</p>
+            </div>
+        </div>
+        <!-- Категории -->
+        <h2 class="categories-title">Просмотр по категориям</h2>
+        <div class="categories">
+            <a href="category.html#equipment">
+                <div class="category-home">
+                    <img src="images/equipment.png" alt="Equipment">
+                    <p><i class="fas fa-flask"></i>Оборудование</p>
+                </div>
+            </a>
+            <a href="category.html#ingredients">
+                <div class="category-home">
+                    <img src="images/ingredients.png" alt="Ingredients">
+                    <p><i class="fas fa-leaf"></i>Ингредиенты</p>
+                </div>
+            </a>
+            <a href="category.html#potions">
+                <div class="category-home">
+                    <img src="images/potions.png" alt="Potions">
+                    <p><i class="fas fa-wine-bottle"></i>Зелья</p>
+                </div>
+            </a>
+            <a href="category.html#achievements">
+                <div class="category-home">
+                    <img src="images/achievements.png" alt="Achievements">
+                    <p><i class="fas fa-trophy"></i>Достижения</p>
+                </div>
+            </a>
+        </div>
+<!-- Викторина -->
+<section class="quiz-section">
+    <h2 class="quiz-title">Викторина по зельеварению</h2>
+    <div class="quiz-container">
+        <div id="quiz-start" class="quiz-screen active">
+            <h3>Проверьте свои знания зельеварения!</h3>
+            <p>Викторина состоит из 10 случайных вопросов. За каждый правильный ответ вы получаете 1 балл.</p>
+            <button id="start-quiz" class="quiz-button">Начать викторину</button>
+        </div>
+        
+        <div id="quiz-questions" class="quiz-screen">
+            <div class="quiz-progress">
+                Вопрос <span id="current-question">1</span> из <span id="total-questions">10</span>
+            </div>
+            <div class="quiz-score">
+                Баллы: <span id="current-score">0</span>
+            </div>
+            <h3 id="question-text"></h3>
+            <div id="answers-container" class="quiz-answers"></div>
+            <button id="next-question" class="quiz-button" disabled>Следующий вопрос</button>
+        </div>
+        
+        <div id="quiz-results" class="quiz-screen">
+            <h3>Результаты викторины</h3>
+            <div class="result-score">
+                Вы набрали <span id="final-score">0</span> из <span id="max-score">10</span> баллов
+            </div>
+            <div id="result-message" class="result-message"></div>
+            <button id="restart-quiz" class="quiz-button">Попробовать снова</button>
+        </div>
+    </div>
+</section>
+        <!-- Футер -->
+        <footer class="potion-footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Вики</h3>
+                    <p>Этот сайт не связан с Minecraft или Mojang.</p>
+                    <p>Содержимое Wiki создается и курируется пользователям.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Навигация</h3>
+                    <a href="index.html">Главная страница</a>
+                    <a href="category.html">Категории</a>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Автор</h3>
+                    <p>Этот веб-сайт был создан Ximik</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <a href="https://t.me/Ximik_XX">
+                        <img class="footer-img" src="images/tg.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Potion Master's Lair</p>
+            </div>
+        </footer>
+    </div>
+<script src="scripts.js"></script>
+</body>
+</html>
