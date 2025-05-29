@@ -247,10 +247,10 @@
             const percentage = (score / questionsPerQuiz) * 100;
             let message = '';
             
-            if (percentage >= 9) message = 'Превосходно! Вы настоящий мастер зельеварения!';
-            else if (percentage >= 7) message = 'Очень хорошо! Вы отлично разбираетесь в зельях!';
-            else if (percentage >= 5) message = 'Неплохо! Но есть куда расти в искусстве зельеварения.';
-            else if (percentage >= 3) message = 'Нужно больше практики. Попробуйте изучить зелья еще раз!';
+            if (percentage >= 90) message = 'Превосходно! Вы настоящий мастер зельеварения!';
+            else if (percentage >= 70) message = 'Очень хорошо! Вы отлично разбираетесь в зельях!';
+            else if (percentage >= 50) message = 'Неплохо! Но есть куда расти в искусстве зельеварения.';
+            else if (percentage >= 30) message = 'Нужно больше практики. Попробуйте изучить зелья еще раз!';
             else message = 'Похоже, вам придётся прикратить изучение зельеварения';
             
             elements.resultMessageElement.textContent = message;
